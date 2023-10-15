@@ -32,7 +32,7 @@ export class AddTripComponent implements OnInit {
       image: ['', Validators.required],
       description: ['', Validators.required],
       })
-
+    }
       onSubmit() {
         this.submitted = true;
         if (this.addForm.valid) {
@@ -45,5 +45,4 @@ export class AddTripComponent implements OnInit {
         }
         // get the form short name to access the form fields
  get f() { return this.addForm.controls; }
-}
 }
